@@ -1,21 +1,32 @@
 body{
-    padding: 0;
-    margin: 0;
     background: #ffd8db;
-    background-image: url('img/wallpaper-index.jpg');
+}
+
+.overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.header{
+    background-image: url('../img/wallpaper-index.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
-.navbar{
-    background: #df7197;
-    box-shadow: 0rem 0.2rem 0.2rem rgba(black, .3);
-}
-
+$nav-background-color: #df7197;
 $nav-color: #2c2c2c;
 $nav-cursor: pointer;
 $nav-margin: 1em;
+
+.navbar{
+    background: $nav-background-color;
+    box-shadow: 0rem 0.2rem 0.2rem rgba(black, .3);
+}
 
 .nav-link{
     color: $nav-color !important;
@@ -34,17 +45,30 @@ $nav-margin: 1em;
     font-weight: bolder;
 }
 
-.nav-link:focus{
+.nav-link:focus,
+.dropdown-item:focus{
     color: black;
     font-weight: 600;
     text-shadow: 0.18em 0.18em 0.18em rgb(63, 63, 63);
+    background-color: $nav-background-color;
 }
 
 .navbar-brand:hover,
-.nav-link:hover {
+.nav-link:hover,
+.dropdown-item:hover{
     color: black;
     font-weight: bold;
     text-shadow: 0.18em 0.18em 0.36em rgb(63, 63, 63);
+}
+
+.dropdown-menu{
+    background-color: $nav-background-color;
+    position: relative;
+}
+
+.dropdown-item:hover{
+    background-color: $nav-background-color;
+
 }
 
 .navbar-collapse{

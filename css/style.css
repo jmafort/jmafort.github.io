@@ -1,8 +1,18 @@
 body {
-  padding: 0;
-  margin: 0;
   background: #ffd8db;
-  background-image: url("img/wallpaper-index.jpg");
+}
+
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  background-image: url("../img/wallpaper-index.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -30,17 +40,29 @@ body {
   font-weight: bolder;
 }
 
-.nav-link:focus {
+.nav-link:focus,
+.dropdown-item:focus {
   color: black;
   font-weight: 600;
   text-shadow: 0.18em 0.18em 0.18em #3f3f3f;
+  background-color: #df7197;
 }
 
 .navbar-brand:hover,
-.nav-link:hover {
+.nav-link:hover,
+.dropdown-item:hover {
   color: black;
   font-weight: bold;
   text-shadow: 0.18em 0.18em 0.36em #3f3f3f;
+}
+
+.dropdown-menu {
+  background-color: #df7197;
+  position: relative;
+}
+
+.dropdown-item:hover {
+  background-color: #df7197;
 }
 
 .navbar-collapse {
