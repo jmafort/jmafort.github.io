@@ -10,6 +10,8 @@
     
     <!--CSS-->
 
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
@@ -73,11 +75,94 @@
         </div>
       </div>
     </nav>
-    <header class="page-header header container-fluid">
-      <div class="overlay">
 
+    <!--Slideshow-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img\slideshow-1.jpg" class="d-block img-fluid" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+          <img src="img\slideshow-1.jpg" class="d-block img-fluid" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="img\slideshow-1.jpg" class="d-block img-fluid" alt="Image 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--Home Text-->
+    <header>
+      <div class="description">
+        <h1>Bem-vindo à Doce Amor!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in pharetra sem ullamcorper.</p>
+        <button class="btn btn-outline-secondary btn-lg">Saiba mais!</button>
       </div>
     </header>
+
+    <!--Footer-->
+    <footer class="custom-footer">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-0">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-lg"
+            href="https://www.facebook.com/Doceamorbrigadeiros1"
+          >
+            <i class="fa fa-facebook"></i>
+          </a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-lg"
+            href="#"
+          >
+            <i class="fa fa-twitter"></i>
+          </a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-link btn-lg"
+            href="#"
+          >
+            <i class="fa fa-google"></i>
+          </a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-lg"
+            href="https://www.instagram.com/brigadeirosdoceamorgmt/"
+          >
+            <i class="fa fa-instagram"></i>
+          </a>
+
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center text-dark p-3 copyright">
+        © 2021 Copyright:
+        <a class="text-dark" href="index.html">Doce Amor</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
 
     <!--Scripts-->
 

@@ -1,27 +1,64 @@
-body{
-    background: #ffd8db;
-}
-
-.overlay{
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.header{
-    background-image: url('../img/wallpaper-index.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
 $nav-background-color: #df7197;
 $nav-color: #2c2c2c;
 $nav-cursor: pointer;
 $nav-margin: 1em;
+$background-color: #ffd8db;
+
+body{
+    background: $background-color;
+}
+
+.btn-link{
+    color: $nav-color;
+    outline: $nav-color;
+}
+
+.copyright{
+    background-color: $nav-background-color;
+}
+
+.custom-footer{
+    color: $nav-color;
+    text-align: center;
+    background-color: $nav-background-color;
+    position: relative;
+    transform: translate(0%, 10%);
+    width: 100%;
+}
+
+.description{
+    left: 50%;
+    top: 50%;
+    position: relative;
+    transform: translate(-50%, 0%);
+    text-align: center;
+
+    h1{
+       color: $nav-background-color; 
+    }
+
+    p{
+        color: black;
+        line-height: 1.5;
+        font-size: 1.3rem;
+    }
+
+    button{
+        border: 1px solid black;
+        background: $nav-background-color;
+        border-radius: 0;
+        color: black;
+    }
+
+    button:hover{
+        color: black;
+        font-weight: bold;
+        text-shadow: 0.18em 0.18em 0.36em rgb(63, 63, 63);
+        background-color: $nav-background-color;
+        border-radius: 0;
+        border: 1px solid black;
+    }
+}
 
 .navbar{
     background: $nav-background-color;
@@ -55,7 +92,8 @@ $nav-margin: 1em;
 
 .navbar-brand:hover,
 .nav-link:hover,
-.dropdown-item:hover{
+.dropdown-item:hover,
+.btn-link:hover{
     color: black;
     font-weight: bold;
     text-shadow: 0.18em 0.18em 0.36em rgb(63, 63, 63);

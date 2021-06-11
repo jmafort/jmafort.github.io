@@ -2,20 +2,52 @@ body {
   background: #ffd8db;
 }
 
-.overlay {
-  position: absolute;
-  min-height: 100%;
-  min-width: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.3);
+.btn-link {
+  color: #2c2c2c;
+  outline: #2c2c2c;
 }
 
-.header {
-  background-image: url("../img/wallpaper-index.jpg");
-  background-size: cover;
-  background-position: center;
+.copyright {
+  background-color: #df7197;
+}
+
+.custom-footer {
+  color: #2c2c2c;
+  text-align: center;
+  background-color: #df7197;
   position: relative;
+  transform: translate(0%, 10%);
+  width: 100%;
+}
+
+.description {
+  left: 50%;
+  top: 50%;
+  position: relative;
+  transform: translate(-50%, 0%);
+  text-align: center;
+}
+.description h1 {
+  color: #df7197;
+}
+.description p {
+  color: black;
+  line-height: 1.5;
+  font-size: 1.3rem;
+}
+.description button {
+  border: 1px solid black;
+  background: #df7197;
+  border-radius: 0;
+  color: black;
+}
+.description button:hover {
+  color: black;
+  font-weight: bold;
+  text-shadow: 0.18em 0.18em 0.36em #3f3f3f;
+  background-color: #df7197;
+  border-radius: 0;
+  border: 1px solid black;
 }
 
 .navbar {
@@ -50,7 +82,8 @@ body {
 
 .navbar-brand:hover,
 .nav-link:hover,
-.dropdown-item:hover {
+.dropdown-item:hover,
+.btn-link:hover {
   color: black;
   font-weight: bold;
   text-shadow: 0.18em 0.18em 0.36em #3f3f3f;
